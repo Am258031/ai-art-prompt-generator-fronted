@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ai-art-prompt-generator/static/css/main.8a0a81bc.css",
+    "main.js": "/ai-art-prompt-generator/static/js/main.6bbfc097.js",
+    "static/js/453.eb570f4f.chunk.js": "/ai-art-prompt-generator/static/js/453.eb570f4f.chunk.js",
+    "index.html": "/ai-art-prompt-generator/index.html",
+    "main.8a0a81bc.css.map": "/ai-art-prompt-generator/static/css/main.8a0a81bc.css.map",
+    "main.6bbfc097.js.map": "/ai-art-prompt-generator/static/js/main.6bbfc097.js.map",
+    "453.eb570f4f.chunk.js.map": "/ai-art-prompt-generator/static/js/453.eb570f4f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a0a81bc.css",
+    "static/js/main.6bbfc097.js"
+  ]
+}
