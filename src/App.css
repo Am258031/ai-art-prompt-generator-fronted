@@ -1,38 +1,109 @@
-.App {
+/* Body styles */
+body {
+  background-color: #554d4d; /* light gray */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Title styling */
+h1 {
+  font-size: 32px;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Make "Creator" stand out */
+h1 span.creator {
+  color: hotpink; /* or any other standout color */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chat-container {
+  max-width: 600px;
+  margin: 50px auto;
+  border: 3px solid #e48e1f;
+  border-radius: 10px;
+  padding: 10px;
+  background: #1f1010;
+}
+
+.chat-box {
+  height: 400px;
+  overflow-y: auto;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Message bubbles */
+.message {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  max-width: 70%;
+  position: relative;
+  word-wrap: break-word;
+}
+
+/* Add labels above each message */
+.message::before {
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: -18px;
+}
+
+/* User message */
+.message.user {
+  background-color: #d080a9;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.message.user::before {
+  content: "User";
+  color: #fcd5e0;
+  left: 0;
+}
+
+/* Bot message */
+.message.bot {
+  background-color: #8ef2f6;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.message.bot::before {
+  content: "Bot";
+  color: #6bd2de;
+  right: 0;
+}
+
+/* Chat input area */
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 2px solid rgb(231, 10, 10);
+  border-radius: 6px;
+  border: 1px solid #0c0b0b;
+  resize: none;
+  min-height: 40px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+/* Send button */
+.chat-input button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #eb2fb9;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  cursor: pointer;
 }
